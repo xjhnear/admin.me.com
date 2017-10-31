@@ -1,0 +1,438 @@
+##
+## PHPExcel
+##
+## Copyright (c) 2006 - 2013 PHPExcel
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+##
+## @category   PHPExcel
+## @package    PHPExcel_Calculation
+## @copyright  Copyright (c) 2006 - 2013 PHPExcel (http://www.codeplex.com/PHPExcel)
+## @license    http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt	LGPL
+## @version    1.8.0, 2014-03-02
+##
+## Data in this file derived from http://www.piuha.fi/excel-function-name-translation/
+##
+##
+
+
+##
+##	Add-in and Automation functions			Apuohjelma- ja automaatiofunktiot
+##
+GETPIVOTDATA		= NOUDA.PIVOT.TIEDOT		##	Palauttaa pivot-taulukkoraporttiin tallennettuja tietoja.
+
+
+##
+##	Cube functions					Kuutiofunktiot
+##
+CUBEKPIMEMBER		= KUUTIOKPIJ"ASEN		##	Palauttaa suorituskykyilmaisimen (KPI) nimen, ominaisuuden sek"a mitan ja n"aytt"a"a nimen sek"a ominaisuuden solussa. KPI on mitattavissa oleva suure, kuten kuukauden bruttotuotto tai vuosinelj"anneksen ty"ontekij"akohtainen liikevaihto, joiden avulla tarkkaillaan organisaation suorituskyky"a.
+CUBEMEMBER		= KUUTIONJ"ASEN			##	Palauttaa kuutiohierarkian j"asenen tai monikon. T"all"a funktiolla voit tarkistaa, ett"a j"asen tai monikko on olemassa kuutiossa.
+CUBEMEMBERPROPERTY	= KUUTIONJ"ASENENOMINAISUUS	##	Palauttaa kuution j"asenominaisuuden arvon. T"all"a funktiolla voit tarkistaa, ett"a nimi on olemassa kuutiossa, ja palauttaa t"am"an j"asenen m"a"aritetyn ominaisuuden.
+CUBERANKEDMEMBER	= KUUTIONLUOKITELTUJ"ASEN	##	Palauttaa joukon n:nnen j"asenen. T"all"a funktiolla voit palauttaa joukosta elementtej"a, kuten parhaan myyj"an tai 10 parasta opiskelijaa.
+CUBESET			= KUUTIOJOUKKO			##	M"a"aritt"a"a lasketun j"asen- tai monikkojoukon l"ahett"am"all"a joukon lausekkeita palvelimessa olevalle kuutiolle. Palvelin luo joukon ja palauttaa sen Microsoft Office Excelille.
+CUBESETCOUNT		= KUUTIOJOUKKOJENM"A"AR"A		##	Palauttaa joukon kohteiden m"a"ar"an.
+CUBEVALUE		= KUUTIONARVO			##	Palauttaa koostetun arvon kuutiosta.
+
+
+##
+##	Database functions				Tietokantafunktiot
+##
+DAVERAGE		= TKESKIARVO			##	Palauttaa valittujen tietokantamerkint"ojen keskiarvon.
+DCOUNT			= TLASKE			##	Laskee tietokannan lukuja sis"alt"avien solujen m"a"ar"an.
+DCOUNTA			= TLASKEA			##	Laskee tietokannan tietoja sis"alt"avien solujen m"a"ar"an.
+DGET			= TNOUDA			##	Hakee m"a"aritettyj"a ehtoja vastaavan tietueen tietokannasta.
+DMAX			= TMAKS				##	Palauttaa suurimman arvon tietokannasta valittujen arvojen joukosta.
+DMIN			= TMIN				##	Palauttaa pienimm"an arvon tietokannasta valittujen arvojen joukosta.
+DPRODUCT		= TTULO				##	Kertoo m"a"aritetyn ehdon t"aytt"avien tietokannan tietueiden tietyss"a kent"ass"a olevat arvot.
+DSTDEV			= TKESKIHAJONTA			##	Laskee keskihajonnan tietokannasta valituista arvoista muodostuvan otoksen perusteella.
+DSTDEVP			= TKESKIHAJONTAP		##	Laskee keskihajonnan tietokannasta valittujen arvojen koko populaation perusteella.
+DSUM			= TSUMMA			##	Lis"a"a luvut m"a"aritetyn ehdon t"aytt"avien tietokannan tietueiden kentt"asarakkeeseen.
+DVAR			= TVARIANSSI			##	Laskee varianssin tietokannasta valittujen arvojen otoksen perusteella.
+DVARP			= TVARIANSSIP			##	Laskee varianssin tietokannasta valittujen arvojen koko populaation perusteella.
+
+
+##
+##	Date and time functions				P"aiv"am"a"ar"a- ja aikafunktiot
+##
+DATE			= P"AIV"AYS			##	Palauttaa annetun p"aiv"am"a"ar"an j"arjestysluvun.
+DATEVALUE		= P"AIV"AYSARVO			##	Muuntaa tekstimuodossa olevan p"aiv"am"a"ar"an j"arjestysluvuksi.
+DAY			= P"AIV"A				##	Muuntaa j"arjestysluvun kuukauden p"aiv"aksi.
+DAYS360			= P"AIV"AT360			##	Laskee kahden p"aiv"am"a"ar"an v"alisten p"aivien m"a"ar"an k"aytt"aen perustana 360-p"aiv"aist"a vuotta.
+EDATE			= P"AIV"A.KUUKAUSI		##	Palauttaa j"arjestyslukuna p"aiv"am"a"ar"an, joka poikkeaa aloitusp"aiv"an p"aiv"am"a"ar"ast"a annetun kuukausim"a"ar"an verran joko eteen- tai taaksep"ain.
+EOMONTH			= KUUKAUSI.LOPPU		##	Palauttaa j"arjestyslukuna sen kuukauden viimeisen p"aiv"am"a"ar"an, joka poikkeaa annetun kuukausim"a"ar"an verran eteen- tai taaksep"ain.
+HOUR			= TUNNIT			##	Muuntaa j"arjestysluvun tunneiksi.
+MINUTE			= MINUUTIT			##	Muuntaa j"arjestysluvun minuuteiksi.
+MONTH			= KUUKAUSI			##	Muuntaa j"arjestysluvun kuukausiksi.
+NETWORKDAYS		= TY"OP"AIV"AT			##	Palauttaa kahden p"aiv"am"a"ar"an v"aliss"a olevien t"aysien ty"op"aivien m"a"ar"an.
+NOW			= NYT				##	Palauttaa kuluvan p"aiv"am"a"ar"an ja ajan j"arjestysnumeron.
+SECOND			= SEKUNNIT			##	Muuntaa j"arjestysluvun sekunneiksi.
+TIME			= AIKA				##	Palauttaa annetun kellonajan j"arjestysluvun.
+TIMEVALUE		= AIKA_ARVO			##	Muuntaa tekstimuodossa olevan kellonajan j"arjestysluvuksi.
+TODAY			= T"AM"A.P"AIV"A			##	Palauttaa kuluvan p"aiv"an p"aiv"am"a"ar"an j"arjestysluvun.
+WEEKDAY			= VIIKONP"AIV"A			##	Muuntaa j"arjestysluvun viikonp"aiv"aksi.
+WEEKNUM			= VIIKKO.NRO			##	Muuntaa j"arjestysluvun luvuksi, joka ilmaisee viikon j"arjestysluvun vuoden alusta laskettuna.
+WORKDAY			= TY"OP"AIV"A			##	Palauttaa j"arjestysluvun p"aiv"am"a"ar"alle, joka sijaitsee annettujen ty"op"aivien verran eteen tai taaksep"ain.
+YEAR			= VUOSI				##	Muuntaa j"arjestysluvun vuosiksi.
+YEARFRAC		= VUOSI.OSA			##	Palauttaa m"a"aritettyjen p"aiv"am"a"arien (aloitusp"aiv"a ja lopetusp"aiv"a) v"alisen osan vuodesta.
+
+
+##
+##	Engineering functions				Tekniset funktiot
+##
+BESSELI			= BESSELI			##	Palauttaa muunnetun Bessel-funktion In(x).
+BESSELJ			= BESSELJ			##	Palauttaa Bessel-funktion Jn(x).
+BESSELK			= BESSELK			##	Palauttaa muunnetun Bessel-funktion Kn(x).
+BESSELY			= BESSELY			##	Palauttaa Bessel-funktion Yn(x).
+BIN2DEC			= BINDES			##	Muuntaa binaariluvun desimaaliluvuksi.
+BIN2HEX			= BINHEKSA			##	Muuntaa binaariluvun heksadesimaaliluvuksi.
+BIN2OCT			= BINOKT			##	Muuntaa binaariluvun oktaaliluvuksi.
+COMPLEX			= KOMPLEKSI			##	Muuntaa reaali- ja imaginaariosien kertoimet kompleksiluvuksi.
+CONVERT			= MUUNNA			##	Muuntaa luvun toisen mittaj"arjestelm"an mukaiseksi.
+DEC2BIN			= DESBIN			##	Muuntaa desimaaliluvun binaariluvuksi.
+DEC2HEX			= DESHEKSA			##	Muuntaa kymmenj"arjestelm"an luvun heksadesimaaliluvuksi.
+DEC2OCT			= DESOKT			##	Muuntaa kymmenj"arjestelm"an luvun oktaaliluvuksi.
+DELTA			= SAMA.ARVO			##	Tarkistaa, ovatko kaksi arvoa yht"a suuria.
+ERF			= VIRHEFUNKTIO			##	Palauttaa virhefunktion.
+ERFC			= VIRHEFUNKTIO.KOMPLEMENTTI	##	Palauttaa komplementtivirhefunktion.
+GESTEP			= RAJA				##	Testaa, onko luku suurempi kuin kynnysarvo.
+HEX2BIN			= HEKSABIN			##	Muuntaa heksadesimaaliluvun binaariluvuksi.
+HEX2DEC			= HEKSADES			##	Muuntaa heksadesimaaliluvun desimaaliluvuksi.
+HEX2OCT			= HEKSAOKT			##	Muuntaa heksadesimaaliluvun oktaaliluvuksi.
+IMABS			= KOMPLEKSI.ITSEISARVO		##	Palauttaa kompleksiluvun itseisarvon (moduluksen).
+IMAGINARY		= KOMPLEKSI.IMAG		##	Palauttaa kompleksiluvun imaginaariosan kertoimen.
+IMARGUMENT		= KOMPLEKSI.ARG			##	Palauttaa theeta-argumentin, joka on radiaaneina annettu kulma.
+IMCONJUGATE		= KOMPLEKSI.KONJ		##	Palauttaa kompleksiluvun konjugaattiluvun.
+IMCOS			= KOMPLEKSI.COS			##	Palauttaa kompleksiluvun kosinin.
+IMDIV			= KOMPLEKSI.OSAM		##	Palauttaa kahden kompleksiluvun osam"a"ar"an.
+IMEXP			= KOMPLEKSI.EKSP		##	Palauttaa kompleksiluvun eksponentin.
+IMLN			= KOMPLEKSI.LN			##	Palauttaa kompleksiluvun luonnollisen logaritmin.
+IMLOG10			= KOMPLEKSI.LOG10		##	Palauttaa kompleksiluvun kymmenkantaisen logaritmin.
+IMLOG2			= KOMPLEKSI.LOG2		##	Palauttaa kompleksiluvun kaksikantaisen logaritmin.
+IMPOWER			= KOMPLEKSI.POT			##	Palauttaa kokonaislukupotenssiin korotetun kompleksiluvun.
+IMPRODUCT		= KOMPLEKSI.TULO		##	Palauttaa kompleksilukujen tulon.
+IMREAL			= KOMPLEKSI.REAALI		##	Palauttaa kompleksiluvun reaaliosan kertoimen.
+IMSIN			= KOMPLEKSI.SIN			##	Palauttaa kompleksiluvun sinin.
+IMSQRT			= KOMPLEKSI.NELI"OJ		##	Palauttaa kompleksiluvun neli"ojuuren.
+IMSUB			= KOMPLEKSI.EROTUS		##	Palauttaa kahden kompleksiluvun erotuksen.
+IMSUM			= KOMPLEKSI.SUM			##	Palauttaa kompleksilukujen summan.
+OCT2BIN			= OKTBIN			##	Muuntaa oktaaliluvun binaariluvuksi.
+OCT2DEC			= OKTDES			##	Muuntaa oktaaliluvun desimaaliluvuksi.
+OCT2HEX			= OKTHEKSA			##	Muuntaa oktaaliluvun heksadesimaaliluvuksi.
+
+
+##
+##	Financial functions				Rahoitusfunktiot   
+##
+ACCRINT			= KERTYNYT.KORKO		##	Laskee arvopaperille kertyneen koron, kun korko kertyy s"a"ann"ollisin v"aliajoin.
+ACCRINTM		= KERTYNYT.KORKO.LOPUSSA	##	Laskee arvopaperille kertyneen koron, kun korko maksetaan er"ap"aiv"an"a.
+AMORDEGRC		= AMORDEGRC			##	Laskee kunkin laskentakauden poiston poistokerrointa k"aytt"am"all"a.
+AMORLINC		= AMORLINC			##	Palauttaa kunkin laskentakauden poiston.
+COUPDAYBS		= KORKOP"AIV"AT.ALUSTA		##	Palauttaa koronmaksukauden aloitusp"aiv"an ja tilitysp"aiv"an v"alisen ajanjakson p"aivien m"a"ar"an.
+COUPDAYS		= KORKOP"AIV"AT			##	Palauttaa p"aivien m"a"ar"an koronmaksukaudelta, johon tilitysp"aiv"a kuuluu.
+COUPDAYSNC		= KORKOP"AIV"AT.SEURAAVA		##	Palauttaa tilitysp"aiv"an ja seuraavan koronmaksup"aiv"an v"alisen ajanjakson p"aivien m"a"ar"an.
+COUPNCD			= KORKOMAKSU.SEURAAVA		##	Palauttaa tilitysp"aiv"an j"alkeisen seuraavan koronmaksup"aiv"an.
+COUPNUM			= KORKOP"AIV"AJAKSOT		##	Palauttaa arvopaperin ostop"aiv"an ja er"a"antymisp"aiv"an v"alisten koronmaksup"aivien m"a"ar"an.
+COUPPCD			= KORKOP"AIV"A.EDELLINEN		##	Palauttaa tilitysp"aiv"a"a edelt"av"an koronmaksup"aiv"an.
+CUMIPMT			= MAKSETTU.KORKO		##	Palauttaa kahden jakson v"alisen"a aikana kertyneen koron.
+CUMPRINC		= MAKSETTU.LYHENNYS		##	Palauttaa lainalle kahden jakson v"alisen"a aikana kertyneen lyhennyksen.
+DB			= DB				##	Palauttaa kauden kirjanpidollisen poiston amerikkalaisen DB-menetelm"an (Fixed-declining balance) mukaan.
+DDB			= DDB				##	Palauttaa kauden kirjanpidollisen poiston amerikkalaisen DDB-menetelm"an (Double-Declining Balance) tai jonkin muun m"a"aritt"am"asi menetelm"an mukaan.
+DISC			= DISKONTTOKORKO		##	Palauttaa arvopaperin diskonttokoron.
+DOLLARDE		= VALUUTTA.DES			##	Muuntaa murtolukuna ilmoitetun valuuttam"a"ar"an desimaaliluvuksi.
+DOLLARFR		= VALUUTTA.MURTO		##	Muuntaa desimaalilukuna ilmaistun valuuttam"a"ar"an murtoluvuksi.
+DURATION		= KESTO				##	Palauttaa keston arvopaperille, jonka koronmaksu tapahtuu s"a"ann"ollisesti.
+EFFECT			= KORKO.EFEKT			##	Palauttaa todellisen vuosikoron.
+FV			= TULEVA.ARVO			##	Palauttaa sijoituksen tulevan arvon.
+FVSCHEDULE		= TULEVA.ARVO.ERIKORKO		##	Palauttaa p"a"aoman tulevan arvon, kun p"a"aomalle on kertynyt korkoa vaihtelevasti.
+INTRATE			= KORKO.ARVOPAPERI		##	Palauttaa arvopaperin korkokannan t"aysin sijoitetulle arvopaperille.
+IPMT			= IPMT				##	Laskee sijoitukselle tai lainalle tiettyn"a ajanjaksona kertyv"an koron.
+IRR			= SIS"AINEN.KORKO		##	Laskee sis"aisen korkokannan kassavirrasta muodostuvalle sarjalle.
+ISPMT			= ONMAKSU			##	Laskee sijoituksen maksetun koron tietyll"a jaksolla.
+MDURATION		= KESTO.MUUNN			##	Palauttaa muunnetun Macauley-keston arvopaperille, jonka oletettu nimellisarvo on 100 euroa.
+MIRR			= MSIS"AINEN			##	Palauttaa sis"aisen korkokannan, kun positiivisten ja negatiivisten kassavirtojen rahoituskorko on erilainen.
+NOMINAL			= KORKO.VUOSI			##	Palauttaa vuosittaisen nimelliskoron.
+NPER			= NJAKSO			##	Palauttaa sijoituksen jaksojen m"a"ar"an.
+NPV			= NNA				##	Palauttaa sijoituksen nykyarvon toistuvista kassavirroista muodostuvan sarjan ja diskonttokoron perusteella.
+ODDFPRICE		= PARITON.ENS.NIMELLISARVO	##	Palauttaa arvopaperin hinnan tilanteessa, jossa ensimm"ainen jakso on pariton.
+ODDFYIELD		= PARITON.ENS.TUOTTO		##	Palauttaa arvopaperin tuoton tilanteessa, jossa ensimm"ainen jakso on pariton.
+ODDLPRICE		= PARITON.VIIM.NIMELLISARVO	##	Palauttaa arvopaperin hinnan tilanteessa, jossa viimeinen jakso on pariton.
+ODDLYIELD		= PARITON.VIIM.TUOTTO		##	Palauttaa arvopaperin tuoton tilanteessa, jossa viimeinen jakso on pariton.
+PMT			= MAKSU				##	Palauttaa annuiteetin kausittaisen maksuer"an.
+PPMT			= PPMT				##	Laskee sijoitukselle tai lainalle tiettyn"a ajanjaksona maksettavan lyhennyksen.
+PRICE			= HINTA				##	Palauttaa hinnan 100 euron nimellisarvoa kohden arvopaperille, jonka korko maksetaan s"a"ann"ollisin v"aliajoin.
+PRICEDISC		= HINTA.DISK			##	Palauttaa diskontatun arvopaperin hinnan 100 euron nimellisarvoa kohden.
+PRICEMAT		= HINTA.LUNASTUS		##	Palauttaa hinnan 100 euron nimellisarvoa kohden arvopaperille, jonka korko maksetaan er"a"antymisp"aiv"an"a.
+PV			= NA				##	Palauttaa sijoituksen nykyarvon.
+RATE			= KORKO				##	Palauttaa annuiteetin kausittaisen korkokannan.
+RECEIVED		= SAATU.HINTA			##	Palauttaa arvopaperin tuoton er"a"antymisp"aiv"an"a kokonaan maksetulle sijoitukselle.
+SLN			= STP				##	Palauttaa sijoituksen tasapoiston yhdelt"a jaksolta.
+SYD			= VUOSIPOISTO			##	Palauttaa sijoituksen vuosipoiston annettuna kautena amerikkalaisen SYD-menetelm"an (Sum-of-Year's Digits) avulla.
+TBILLEQ			= OBLIG.TUOTTOPROS		##	Palauttaa valtion obligaation tuoton vastaavana joukkovelkakirjan tuottona.
+TBILLPRICE		= OBLIG.HINTA			##	Palauttaa obligaation hinnan 100 euron nimellisarvoa kohden.
+TBILLYIELD		= OBLIG.TUOTTO			##	Palauttaa obligaation tuoton.
+VDB			= VDB				##	Palauttaa annetun kauden tai kauden osan kirjanpidollisen poiston amerikkalaisen DB-menetelm"an (Fixed-declining balance) mukaan.
+XIRR			= SIS"AINEN.KORKO.JAKSOTON	##	Palauttaa sis"aisen korkokannan kassavirtojen sarjoille, jotka eiv"at v"altt"am"att"a ole s"a"ann"ollisi"a.
+XNPV			= NNA.JAKSOTON			##	Palauttaa nettonykyarvon kassavirtasarjalle, joka ei v"altt"am"att"a ole kausittainen.
+YIELD			= TUOTTO			##	Palauttaa tuoton arvopaperille, jonka korko maksetaan s"a"ann"ollisin v"aliajoin.
+YIELDDISC		= TUOTTO.DISK			##	Palauttaa diskontatun arvopaperin, kuten obligaation, vuosittaisen tuoton.
+YIELDMAT		= TUOTTO.ER"AP			##	Palauttaa er"a"antymisp"aiv"an"a"an korkoa tuottavan arvopaperin vuosittaisen tuoton.
+
+
+##
+##	Information functions				Erikoisfunktiot
+##
+CELL			= SOLU				##	Palauttaa tietoja solun muotoilusta, sijainnista ja sis"all"ost"a.
+ERROR.TYPE		= VIRHEEN.LAJI			##	Palauttaa virhetyyppi"a vastaavan luvun.
+INFO			= KUVAUS			##	Palauttaa tietoja nykyisest"a k"aytt"oymp"arist"ost"a.
+ISBLANK			= ONTYHJ"A			##	Palauttaa arvon TOSI, jos arvo on tyhj"a.
+ISERR			= ONVIRH			##	Palauttaa arvon TOSI, jos arvo on mik"a tahansa virhearvo paitsi arvo #PUUTTUU!.
+ISERROR			= ONVIRHE			##	Palauttaa arvon TOSI, jos arvo on mik"a tahansa virhearvo.
+ISEVEN			= ONPARILLINEN			##	Palauttaa arvon TOSI, jos arvo on parillinen.
+ISLOGICAL		= ONTOTUUS			##	Palauttaa arvon TOSI, jos arvo on mik"a tahansa looginen arvo.
+ISNA			= ONPUUTTUU			##	Palauttaa arvon TOSI, jos virhearvo on #PUUTTUU!.
+ISNONTEXT		= ONEI_TEKSTI			##	Palauttaa arvon TOSI, jos arvo ei ole teksti.
+ISNUMBER		= ONLUKU			##	Palauttaa arvon TOSI, jos arvo on luku.
+ISODD			= ONPARITON			##	Palauttaa arvon TOSI, jos arvo on pariton.
+ISREF			= ONVIITT			##	Palauttaa arvon TOSI, jos arvo on viittaus.
+ISTEXT			= ONTEKSTI			##	Palauttaa arvon TOSI, jos arvo on teksti.
+N			= N				##	Palauttaa arvon luvuksi muunnettuna.
+NA			= PUUTTUU			##	Palauttaa virhearvon #PUUTTUU!.
+TYPE			= TYYPPI			##	Palauttaa luvun, joka ilmaisee arvon tietotyypin.
+
+
+##
+##	Logical functions				Loogiset funktiot
+##
+AND			= JA				##	Palauttaa arvon TOSI, jos kaikkien argumenttien arvo on TOSI.
+FALSE			= EP"ATOSI			##	Palauttaa totuusarvon EP"ATOSI.
+IF			= JOS				##	M"a"aritt"a"a suoritettavan loogisen testin.
+IFERROR			= JOSVIRHE			##	Palauttaa m"a"aritt"am"asi arvon, jos kaavan tulos on virhe; muussa tapauksessa palauttaa kaavan tuloksen.
+NOT			= EI				##	K"a"ant"a"a argumentin loogisen arvon.
+OR			= TAI				##	Palauttaa arvon TOSI, jos mink"a tahansa argumentin arvo on TOSI.
+TRUE			= TOSI				##	Palauttaa totuusarvon TOSI.
+
+
+##
+##	Lookup and reference functions			Haku- ja viitefunktiot
+##
+ADDRESS			= OSOITE			##	Palauttaa laskentataulukon soluun osoittavan viittauksen tekstin"a.
+AREAS			= ALUEET			##	Palauttaa viittauksessa olevien alueiden m"a"ar"an.
+CHOOSE			= VALITSE.INDEKSI		##	Valitsee arvon arvoluettelosta.
+COLUMN			= SARAKE			##	Palauttaa viittauksen sarakenumeron.
+COLUMNS			= SARAKKEET			##	Palauttaa viittauksessa olevien sarakkeiden m"a"ar"an.
+HLOOKUP			= VHAKU				##	Suorittaa haun matriisin ylimm"alt"a rivilt"a ja palauttaa m"a"aritetyn solun arvon.
+HYPERLINK		= HYPERLINKKI			##	Luo pikakuvakkeen tai tekstin, joka avaa verkkopalvelimeen, intranetiin tai Internetiin tallennetun tiedoston.
+INDEX			= INDEKSI			##	Valitsee arvon viittauksesta tai matriisista indeksin mukaan.
+INDIRECT		= EP"ASUORA			##	Palauttaa tekstiarvona ilmaistun viittauksen.
+LOOKUP			= HAKU				##	Etsii arvoja vektorista tai matriisista.
+MATCH			= VASTINE			##	Etsii arvoja viittauksesta tai matriisista.
+OFFSET			= SIIRTYM"A			##	Palauttaa annetun viittauksen siirtym"an.
+ROW			= RIVI				##	Palauttaa viittauksen rivinumeron.
+ROWS			= RIVIT				##	Palauttaa viittauksessa olevien rivien m"a"ar"an.
+RTD			= RTD				##	Noutaa COM-automaatiota (automaatio: Tapa k"asitell"a sovelluksen objekteja toisesta sovelluksesta tai kehitysty"okalusta. Automaatio, jota aiemmin kutsuttiin OLE-automaatioksi, on teollisuusstandardi ja COM-mallin (Component Object Model) ominaisuus.) tukevasta ohjelmasta reaaliaikaisia tietoja.
+TRANSPOSE		= TRANSPONOI			##	Palauttaa matriisin k"a"anteismatriisin.
+VLOOKUP			= PHAKU				##	Suorittaa haun matriisin ensimm"aisest"a sarakkeesta ja palauttaa rivill"a olevan solun arvon.
+
+
+##
+##	Math and trigonometry functions			Matemaattiset ja trigonometriset funktiot
+##
+ABS			= ITSEISARVO			##	Palauttaa luvun itseisarvon.
+ACOS			= ACOS				##	Palauttaa luvun arkuskosinin.
+ACOSH			= ACOSH				##	Palauttaa luvun k"a"anteisen hyperbolisen kosinin.
+ASIN			= ASIN				##	Palauttaa luvun arkussinin.
+ASINH			= ASINH				##	Palauttaa luvun k"a"anteisen hyperbolisen sinin.
+ATAN			= ATAN				##	Palauttaa luvun arkustangentin.
+ATAN2			= ATAN2				##	Palauttaa arkustangentin x- ja y-koordinaatin perusteella.
+ATANH			= ATANH				##	Palauttaa luvun k"a"anteisen hyperbolisen tangentin.
+CEILING			= PY"ORIST"A.KERR.YL"OS		##	Py"orist"a"a luvun l"ahimp"a"an kokonaislukuun tai tarkkuusargumentin l"ahimp"a"an kerrannaiseen.
+COMBIN			= KOMBINAATIO			##	Palauttaa mahdollisten kombinaatioiden m"a"ar"an annetulle objektien m"a"ar"alle.
+COS			= COS				##	Palauttaa luvun kosinin.
+COSH			= COSH				##	Palauttaa luvun hyperbolisen kosinin.
+DEGREES			= ASTEET			##	Muuntaa radiaanit asteiksi.
+EVEN			= PARILLINEN			##	Py"orist"a"a luvun yl"osp"ain l"ahimp"a"an parilliseen kokonaislukuun.
+EXP			= EKSPONENTTI			##	Palauttaa e:n korotettuna annetun luvun osoittamaan potenssiin.
+FACT			= KERTOMA			##	Palauttaa luvun kertoman.
+FACTDOUBLE		= KERTOMA.OSA			##	Palauttaa luvun osakertoman.
+FLOOR			= PY"ORIST"A.KERR.ALAS		##	Py"orist"a"a luvun alasp"ain (nollaa kohti).
+GCD			= SUURIN.YHT.TEKIJ"A		##	Palauttaa suurimman yhteisen tekij"an.
+INT			= KOKONAISLUKU			##	Py"orist"a"a luvun alasp"ain l"ahimp"a"an kokonaislukuun.
+LCM			= PIENIN.YHT.JAETTAVA		##	Palauttaa pienimm"an yhteisen tekij"an.
+LN			= LUONNLOG			##	Palauttaa luvun luonnollisen logaritmin.
+LOG			= LOG				##	Laskee luvun logaritmin k"aytt"am"all"a annettua kantalukua.
+LOG10			= LOG10				##	Palauttaa luvun kymmenkantaisen logaritmin.
+MDETERM			= MDETERM			##	Palauttaa matriisin matriisideterminantin.
+MINVERSE		= MK"A"ANTEINEN			##	Palauttaa matriisin k"a"anteismatriisin.
+MMULT			= MKERRO			##	Palauttaa kahden matriisin tulon.
+MOD			= JAKOJ				##	Palauttaa jakolaskun j"a"ann"oksen.
+MROUND			= PY"ORIST"A.KERR			##	Palauttaa luvun py"oristettyn"a annetun luvun kerrannaiseen.
+MULTINOMIAL		= MULTINOMI			##	Palauttaa lukujoukon multinomin.
+ODD			= PARITON			##	Py"orist"a"a luvun yl"osp"ain l"ahimp"a"an parittomaan kokonaislukuun.
+PI			= PII				##	Palauttaa piin arvon.
+POWER			= POTENSSI			##	Palauttaa luvun korotettuna haluttuun potenssiin.
+PRODUCT			= TULO				##	Kertoo annetut argumentit.
+QUOTIENT		= OSAM"A"AR"A			##	Palauttaa osam"a"ar"an kokonaislukuosan.
+RADIANS			= RADIAANIT			##	Muuntaa asteet radiaaneiksi.
+RAND			= SATUNNAISLUKU			##	Palauttaa satunnaisluvun v"alilt"a 0–1.
+RANDBETWEEN		= SATUNNAISLUKU.V"ALILT"A		##	Palauttaa satunnaisluvun m"a"aritettyjen lukujen v"alilt"a.
+ROMAN			= ROMAN				##	Muuntaa arabialaisen numeron tekstimuotoiseksi roomalaiseksi numeroksi.
+ROUND			= PY"ORIST"A			##	Py"orist"a"a luvun annettuun m"a"ar"a"an desimaaleja.
+ROUNDDOWN		= PY"ORIST"A.DES.ALAS		##	Py"orist"a"a luvun alasp"ain (nollaa kohti).
+ROUNDUP			= PY"ORIST"A.DES.YL"OS		##	Py"orist"a"a luvun yl"osp"ain (poisp"ain nollasta).
+SERIESSUM		= SARJA.SUMMA			##	Palauttaa kaavaan perustuvan potenssisarjan arvon.
+SIGN			= ETUMERKKI			##	Palauttaa luvun etumerkin.
+SIN			= SIN				##	Palauttaa annetun kulman sinin.
+SINH			= SINH				##	Palauttaa luvun hyperbolisen sinin.
+SQRT			= NELI"OJUURI			##	Palauttaa positiivisen neli"ojuuren.
+SQRTPI			= NELI"OJUURI.PII		##	Palauttaa tulon (luku * pii) neli"ojuuren.
+SUBTOTAL		= V"ALISUMMA			##	Palauttaa luettelon tai tietokannan v"alisumman.
+SUM			= SUMMA				##	Laskee yhteen annetut argumentit.
+SUMIF			= SUMMA.JOS			##	Laskee ehdot t"aytt"avien solujen summan.
+SUMIFS			= SUMMA.JOS.JOUKKO		##	Laskee yhteen solualueen useita ehtoja vastaavat solut.
+SUMPRODUCT		= TULOJEN.SUMMA			##	Palauttaa matriisin toisiaan vastaavien osien tulojen summan.
+SUMSQ			= NELI"OSUMMA			##	Palauttaa argumenttien neli"oiden summan.
+SUMX2MY2		= NELI"OSUMMIEN.EROTUS		##	Palauttaa kahden matriisin toisiaan vastaavien arvojen laskettujen neli"osummien erotuksen.
+SUMX2PY2		= NELI"OSUMMIEN.SUMMA		##	Palauttaa kahden matriisin toisiaan vastaavien arvojen neli"osummien summan.
+SUMXMY2			= EROTUSTEN.NELI"OSUMMA		##	Palauttaa kahden matriisin toisiaan vastaavien arvojen erotusten neli"osumman.
+TAN			= TAN				##	Palauttaa luvun tangentin.
+TANH			= TANH				##	Palauttaa luvun hyperbolisen tangentin.
+TRUNC			= KATKAISE			##	Katkaisee luvun kokonaisluvuksi.
+
+
+##
+##	Statistical functions				Tilastolliset funktiot
+##
+AVEDEV			= KESKIPOIKKEAMA		##	Palauttaa hajontojen itseisarvojen keskiarvon.
+AVERAGE			= KESKIARVO			##	Palauttaa argumenttien keskiarvon.
+AVERAGEA		= KESKIARVOA			##	Palauttaa argumenttien, mukaan lukien lukujen, tekstin ja loogisten arvojen, keskiarvon.
+AVERAGEIF		= KESKIARVO.JOS			##	Palauttaa alueen niiden solujen keskiarvon (aritmeettisen keskiarvon), jotka t"aytt"av"at annetut ehdot.
+AVERAGEIFS		= KESKIARVO.JOS.JOUKKO		##	Palauttaa niiden solujen keskiarvon (aritmeettisen keskiarvon), jotka vastaavat useita ehtoja.
+BETADIST		= BEETAJAKAUMA			##	Palauttaa kumulatiivisen beetajakaumafunktion arvon.
+BETAINV			= BEETAJAKAUMA.K"A"ANT		##	Palauttaa m"a"aritetyn beetajakauman k"a"anteisen kumulatiivisen jakaumafunktion arvon.
+BINOMDIST		= BINOMIJAKAUMA			##	Palauttaa yksitt"aisen termin binomijakaumatodenn"ak"oisyyden.
+CHIDIST			= CHIJAKAUMA			##	Palauttaa yksisuuntaisen chi-neli"on jakauman todenn"ak"oisyyden.
+CHIINV			= CHIJAKAUMA.K"A"ANT		##	Palauttaa yksisuuntaisen chi-neli"on jakauman todenn"ak"oisyyden k"a"anteisarvon.
+CHITEST			= CHITESTI			##	Palauttaa riippumattomuustestin tuloksen.
+CONFIDENCE		= LUOTTAMUSV"ALI			##	Palauttaa luottamusv"alin populaation keskiarvolle.
+CORREL			= KORRELAATIO			##	Palauttaa kahden arvojoukon korrelaatiokertoimen.
+COUNT			= LASKE				##	Laskee argumenttiluettelossa olevien lukujen m"a"ar"an.
+COUNTA			= LASKE.A			##	Laskee argumenttiluettelossa olevien arvojen m"a"ar"an.
+COUNTBLANK		= LASKE.TYHJ"AT			##	Laskee alueella olevien tyhjien solujen m"a"ar"an.
+COUNTIF			= LASKE.JOS			##	Laskee alueella olevien sellaisten solujen m"a"ar"an, joiden sis"alt"o vastaa annettuja ehtoja.
+COUNTIFS		= LASKE.JOS.JOUKKO		##	Laskee alueella olevien sellaisten solujen m"a"ar"an, joiden sis"alt"o vastaa useita ehtoja.
+COVAR			= KOVARIANSSI			##	Palauttaa kovarianssin, joka on keskiarvo havaintoaineiston kunkin pisteparin poikkeamien tuloista.
+CRITBINOM		= BINOMIJAKAUMA.KRIT		##	Palauttaa pienimm"an arvon, jossa binomijakauman kertym"afunktion arvo on pienempi tai yht"a suuri kuin vertailuarvo.
+DEVSQ			= OIKAISTU.NELI"OSUMMA		##	Palauttaa keskipoikkeamien neli"osumman.
+EXPONDIST		= EKSPONENTIAALIJAKAUMA		##	Palauttaa eksponentiaalijakauman.
+FDIST			= FJAKAUMA			##	Palauttaa F-todenn"ak"oisyysjakauman.
+FINV			= FJAKAUMA.K"A"ANT		##	Palauttaa F-todenn"ak"oisyysjakauman k"a"anteisfunktion.
+FISHER			= FISHER			##	Palauttaa Fisher-muunnoksen.
+FISHERINV		= FISHER.K"A"ANT			##	Palauttaa k"a"anteisen Fisher-muunnoksen.
+FORECAST		= ENNUSTE			##	Palauttaa lineaarisen trendin arvon.
+FREQUENCY		= TAAJUUS			##	Palauttaa frekvenssijakautuman pystysuuntaisena matriisina.
+FTEST			= FTESTI			##	Palauttaa F-testin tuloksen.
+GAMMADIST		= GAMMAJAKAUMA			##	Palauttaa gammajakauman.
+GAMMAINV		= GAMMAJAKAUMA.K"A"ANT		##	Palauttaa k"a"anteisen gammajakauman kertym"afunktion.
+GAMMALN			= GAMMALN			##	Palauttaa gammafunktion luonnollisen logaritmin G(x).
+GEOMEAN			= KESKIARVO.GEOM		##	Palauttaa geometrisen keskiarvon.
+GROWTH			= KASVU				##	Palauttaa eksponentiaalisen trendin arvon.
+HARMEAN			= KESKIARVO.HARM		##	Palauttaa harmonisen keskiarvon.
+HYPGEOMDIST		= HYPERGEOM.JAKAUMA		##	Palauttaa hypergeometrisen jakauman.
+INTERCEPT		= LEIKKAUSPISTE			##	Palauttaa lineaarisen regressiosuoran leikkauspisteen.
+KURT			= KURT				##	Palauttaa tietoalueen vinous-arvon eli huipukkuuden.
+LARGE			= SUURI				##	Palauttaa tietojoukon k:nneksi suurimman arvon.
+LINEST			= LINREGR			##	Palauttaa lineaarisen trendin parametrit.
+LOGEST			= LOGREGR			##	Palauttaa eksponentiaalisen trendin parametrit.
+LOGINV			= LOGNORM.JAKAUMA.K"A"ANT		##	Palauttaa lognormeeratun jakauman k"a"anteisfunktion.
+LOGNORMDIST		= LOGNORM.JAKAUMA		##	Palauttaa lognormaalisen jakauman kertym"afunktion.
+MAX			= MAKS				##	Palauttaa suurimman arvon argumenttiluettelosta.
+MAXA			= MAKSA				##	Palauttaa argumenttien, mukaan lukien lukujen, tekstin ja loogisten arvojen, suurimman arvon.
+MEDIAN			= MEDIAANI			##	Palauttaa annettujen lukujen mediaanin.
+MIN			= MIN				##	Palauttaa pienimm"an arvon argumenttiluettelosta.
+MINA			= MINA				##	Palauttaa argumenttien, mukaan lukien lukujen, tekstin ja loogisten arvojen, pienimm"an arvon.
+MODE			= MOODI				##	Palauttaa tietojoukossa useimmin esiintyv"an arvon.
+NEGBINOMDIST		= BINOMIJAKAUMA.NEG		##	Palauttaa negatiivisen binomijakauman.
+NORMDIST		= NORM.JAKAUMA			##	Palauttaa normaalijakauman kertym"afunktion.
+NORMINV			= NORM.JAKAUMA.K"A"ANT		##	Palauttaa k"a"anteisen normaalijakauman kertym"afunktion.
+NORMSDIST		= NORM.JAKAUMA.NORMIT		##	Palauttaa normitetun normaalijakauman kertym"afunktion.
+NORMSINV		= NORM.JAKAUMA.NORMIT.K"A"ANT	##	Palauttaa normitetun normaalijakauman kertym"afunktion k"a"anteisarvon.
+PEARSON			= PEARSON			##	Palauttaa Pearsonin tulomomenttikorrelaatiokertoimen.
+PERCENTILE		= PROSENTTIPISTE		##	Palauttaa alueen arvojen k:nnen prosenttipisteen.
+PERCENTRANK		= PROSENTTIJ"ARJESTYS		##	Palauttaa tietojoukon arvon prosentuaalisen j"arjestysluvun.
+PERMUT			= PERMUTAATIO			##	Palauttaa mahdollisten permutaatioiden m"a"ar"an annetulle objektien m"a"ar"alle.
+POISSON			= POISSON			##	Palauttaa Poissonin todenn"ak"oisyysjakauman.
+PROB			= TODENN"AK"OISYYS		##	Palauttaa todenn"ak"oisyyden sille, ett"a arvot ovat tietylt"a v"alilt"a.
+QUARTILE		= NELJ"ANNES			##	Palauttaa tietoalueen nelj"anneksen.
+RANK			= ARVON.MUKAAN			##	Palauttaa luvun paikan lukuarvoluettelossa.
+RSQ			= PEARSON.NELI"O			##	Palauttaa Pearsonin tulomomenttikorrelaatiokertoimen neli"on.
+SKEW			= JAKAUMAN.VINOUS		##	Palauttaa jakauman vinouden.
+SLOPE			= KULMAKERROIN			##	Palauttaa lineaarisen regressiosuoran kulmakertoimen.
+SMALL			= PIENI				##	Palauttaa tietojoukon k:nneksi pienimm"an arvon.
+STANDARDIZE		= NORMITA			##	Palauttaa normitetun arvon.
+STDEV			= KESKIHAJONTA			##	Laskee populaation keskihajonnan otoksen perusteella.
+STDEVA			= KESKIHAJONTAA			##	Laskee populaation keskihajonnan otoksen perusteella, mukaan lukien luvut, tekstin ja loogiset arvot.
+STDEVP			= KESKIHAJONTAP			##	Laskee normaalijakautuman koko populaation perusteella.
+STDEVPA			= KESKIHAJONTAPA		##	Laskee populaation keskihajonnan koko populaation perusteella, mukaan lukien luvut, tekstin ja totuusarvot.
+STEYX			= KESKIVIRHE			##	Palauttaa regression kutakin x-arvoa vastaavan ennustetun y-arvon keskivirheen.
+TDIST			= TJAKAUMA			##	Palauttaa t-jakautuman.
+TINV			= TJAKAUMA.K"A"ANT		##	Palauttaa k"a"anteisen t-jakauman.
+TREND			= SUUNTAUS			##	Palauttaa lineaarisen trendin arvoja.
+TRIMMEAN		= KESKIARVO.TASATTU		##	Palauttaa tietojoukon tasatun keskiarvon.
+TTEST			= TTESTI			##	Palauttaa t-testiin liittyv"an todenn"ak"oisyyden.
+VAR			= VAR				##	Arvioi populaation varianssia otoksen perusteella.
+VARA			= VARA				##	Laskee populaation varianssin otoksen perusteella, mukaan lukien luvut, tekstin ja loogiset arvot.
+VARP			= VARP				##	Laskee varianssin koko populaation perusteella.
+VARPA			= VARPA				##	Laskee populaation varianssin koko populaation perusteella, mukaan lukien luvut, tekstin ja totuusarvot.
+WEIBULL			= WEIBULL			##	Palauttaa Weibullin jakauman.
+ZTEST			= ZTESTI			##	Palauttaa z-testin yksisuuntaisen todenn"ak"oisyysarvon.
+
+
+##
+##	Text functions					Tekstifunktiot
+##
+ASC			= ASC				##	Muuntaa merkkijonossa olevat englanninkieliset DBCS- tai katakana-merkit SBCS-merkeiksi.
+BAHTTEXT		= BAHTTEKSTI			##	Muuntaa luvun tekstiksi ss (baht) -valuuttamuotoa k"aytt"am"all"a.
+CHAR			= MERKKI			##	Palauttaa koodin lukua vastaavan merkin.
+CLEAN			= SIIVOA			##	Poistaa tekstist"a kaikki tulostumattomat merkit.
+CODE			= KOODI				##	Palauttaa tekstimerkkijonon ensimm"aisen merkin numerokoodin.
+CONCATENATE		= KETJUTA			##	Yhdist"a"a useat merkkijonot yhdeksi merkkijonoksi.
+DOLLAR			= VALUUTTA			##	Muuntaa luvun tekstiksi $ (dollari) -valuuttamuotoa k"aytt"am"all"a.
+EXACT			= VERTAA			##	Tarkistaa, ovatko kaksi tekstiarvoa samanlaiset.
+FIND			= ETSI				##	Etsii tekstiarvon toisen tekstin sis"alt"a (tunnistaa isot ja pienet kirjaimet).
+FINDB			= ETSIB				##	Etsii tekstiarvon toisen tekstin sis"alt"a (tunnistaa isot ja pienet kirjaimet).
+FIXED			= KIINTE"A			##	Muotoilee luvun tekstiksi, jossa on kiinte"a m"a"ar"a desimaaleja.
+JIS			= JIS				##	Muuntaa merkkijonossa olevat englanninkieliset SBCS- tai katakana-merkit DBCS-merkeiksi.
+LEFT			= VASEN				##	Palauttaa tekstiarvon vasemmanpuoliset merkit.
+LEFTB			= VASENB			##	Palauttaa tekstiarvon vasemmanpuoliset merkit.
+LEN			= PITUUS			##	Palauttaa tekstimerkkijonon merkkien m"a"ar"an.
+LENB			= PITUUSB			##	Palauttaa tekstimerkkijonon merkkien m"a"ar"an.
+LOWER			= PIENET			##	Muuntaa tekstin pieniksi kirjaimiksi.
+MID			= POIMI.TEKSTI			##	Palauttaa m"a"aritetyn m"a"ar"an merkkej"a merkkijonosta alkaen annetusta kohdasta.
+MIDB			= POIMI.TEKSTIB			##	Palauttaa m"a"aritetyn m"a"ar"an merkkej"a merkkijonosta alkaen annetusta kohdasta.
+PHONETIC		= FONEETTINEN			##	Hakee foneettiset (furigana) merkit merkkijonosta.
+PROPER			= ERISNIMI			##	Muuttaa merkkijonon kunkin sanan ensimm"aisen kirjaimen isoksi.
+REPLACE			= KORVAA			##	Korvaa tekstiss"a olevat merkit.
+REPLACEB		= KORVAAB			##	Korvaa tekstiss"a olevat merkit.
+REPT			= TOISTA			##	Toistaa tekstin annetun m"a"ar"an kertoja.
+RIGHT			= OIKEA				##	Palauttaa tekstiarvon oikeanpuoliset merkit.
+RIGHTB			= OIKEAB			##	Palauttaa tekstiarvon oikeanpuoliset merkit.
+SEARCH			= K"AY.L"API			##	Etsii tekstiarvon toisen tekstin sis"alt"a (isot ja pienet kirjaimet tulkitaan samoiksi merkeiksi).
+SEARCHB			= K"AY.L"APIB			##	Etsii tekstiarvon toisen tekstin sis"alt"a (isot ja pienet kirjaimet tulkitaan samoiksi merkeiksi).
+SUBSTITUTE		= VAIHDA			##	Korvaa merkkijonossa olevan tekstin toisella.
+T			= T				##	Muuntaa argumentit tekstiksi.
+TEXT			= TEKSTI			##	Muotoilee luvun ja muuntaa sen tekstiksi.
+TRIM			= POISTA.V"ALIT			##	Poistaa v"alily"onnit tekstist"a.
+UPPER			= ISOT				##	Muuntaa tekstin isoiksi kirjaimiksi.
+VALUE			= ARVO				##	Muuntaa tekstiargumentin luvuksi.

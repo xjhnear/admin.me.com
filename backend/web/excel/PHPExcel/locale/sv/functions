@@ -1,0 +1,408 @@
+##
+##	Add-in and Automation functions			Till"aggs- och automatiseringsfunktioner
+##
+GETPIVOTDATA		= H"AMTA.PIVOTDATA		##	Returnerar data som lagrats i en pivottabellrapport
+
+
+##
+##	Cube functions					Kubfunktioner
+##
+CUBEKPIMEMBER		= KUBKPIMEDLEM			##	Returnerar namn, egenskap och matt f"or en KPI och visar namnet och egenskapen i cellen. En KPI, eller prestandaindikator, "ar ett kvantifierbart matt, t.ex. manatlig bruttovinst eller personaloms"attning per kvartal, som anv"ands f"or att analysera ett f"oretags resultat.
+CUBEMEMBER		= KUBMEDLEM			##	Returnerar en medlem eller ett par i en kubhierarki. Anv"ands f"or att verifiera att medlemmen eller paret finns i kuben.
+CUBEMEMBERPROPERTY	= KUBMEDLEMSEGENSKAP		##	Returnerar v"ardet f"or en medlemsegenskap i kuben. Anv"ands f"or att verifiera att ett medlemsnamn finns i kuben, samt f"or att returnera den angivna egenskapen f"or medlemmen.
+CUBERANKEDMEMBER	= KUBRANGORDNADMEDLEM		##	Returnerar den n:te, eller rangordnade, medlemmen i en upps"attning. Anv"ands f"or att returnera ett eller flera element i en upps"attning, till exempelvis den b"asta f"ors"aljaren eller de tio b"asta eleverna.
+CUBESET			= KUBINST"ALLNING		##	Definierar en ber"aknad upps"attning medlemmar eller par genom att skicka ett best"amt uttryck till kuben pa servern, som skapar upps"attningen och sedan returnerar den till Microsoft Office Excel.
+CUBESETCOUNT		= KUBINST"ALLNINGANTAL		##	Returnerar antalet objekt i en upps"attning.
+CUBEVALUE		= KUBV"ARDE			##	Returnerar ett m"angdv"arde fran en kub.
+
+
+##
+##	Database functions				Databasfunktioner
+##
+DAVERAGE		= DMEDEL			##	Returnerar medelv"ardet av databasposterna
+DCOUNT			= DANTAL			##	R"aknar antalet celler som innehaller tal i en databas
+DCOUNTA			= DANTALV			##	R"aknar ifyllda celler i en databas
+DGET			= DH"AMTA			##	H"amtar en enstaka post fran en databas som uppfyller de angivna villkoren
+DMAX			= DMAX				##	Returnerar det st"orsta v"ardet fran databasposterna
+DMIN			= DMIN				##	Returnerar det minsta v"ardet fran databasposterna
+DPRODUCT		= DPRODUKT			##	Multiplicerar v"ardena i ett visst f"alt i poster som uppfyller villkoret
+DSTDEV			= DSTDAV			##	Uppskattar standardavvikelsen baserat pa ett urval av databasposterna
+DSTDEVP			= DSTDAVP			##	Ber"aknar standardavvikelsen utifran hela populationen av valda databasposter
+DSUM			= DSUMMA			##	Summerar talen i kolumnf"alt i databasposter som uppfyller villkoret
+DVAR			= DVARIANS			##	Uppskattar variansen baserat pa ett urval av databasposterna
+DVARP			= DVARIANSP			##	Ber"aknar variansen utifran hela populationen av valda databasposter
+
+
+##
+##	Date and time functions				Tid- och datumfunktioner
+##
+DATE			= DATUM				##	Returnerar ett serienummer f"or ett visst datum
+DATEVALUE		= DATUMV"ARDE			##	Konverterar ett datum i textformat till ett serienummer
+DAY			= DAG				##	Konverterar ett serienummer till dag i manaden
+DAYS360			= DAGAR360			##	Ber"aknar antalet dagar mellan tva datum baserat pa ett 360-dagarsar
+EDATE			= EDATUM			##	Returnerar serienumret f"or ett datum som infaller ett visst antal manader f"ore eller efter startdatumet
+EOMONTH			= SLUTMANAD			##	Returnerar serienumret f"or sista dagen i manaden ett visst antal manader tidigare eller senare
+HOUR			= TIMME				##	Konverterar ett serienummer till en timme
+MINUTE			= MINUT				##	Konverterar ett serienummer till en minut
+MONTH			= MANAD				##	Konverterar ett serienummer till en manad
+NETWORKDAYS		= NETTOARBETSDAGAR		##	Returnerar antalet hela arbetsdagar mellan tva datum
+NOW			= NU				##	Returnerar serienumret f"or dagens datum och aktuell tid
+SECOND			= SEKUND			##	Konverterar ett serienummer till en sekund
+TIME			= KLOCKSLAG			##	Returnerar serienumret f"or en viss tid
+TIMEVALUE		= TIDV"ARDE			##	Konverterar en tid i textformat till ett serienummer
+TODAY			= IDAG				##	Returnerar serienumret f"or dagens datum
+WEEKDAY			= VECKODAG			##	Konverterar ett serienummer till en dag i veckan
+WEEKNUM			= VECKONR			##	Konverterar ett serienummer till ett veckonummer
+WORKDAY			= ARBETSDAGAR			##	Returnerar serienumret f"or ett datum ett visst antal arbetsdagar tidigare eller senare
+YEAR			= AR				##	Konverterar ett serienummer till ett ar
+YEARFRAC		= ARDEL				##	Returnerar en del av ett ar som representerar antalet hela dagar mellan start- och slutdatum
+
+
+##
+##	Engineering functions				Tekniska funktioner
+##
+BESSELI			= BESSELI			##	Returnerar den modifierade Bessel-funktionen In(x)
+BESSELJ			= BESSELJ			##	Returnerar Bessel-funktionen Jn(x)
+BESSELK			= BESSELK			##	Returnerar den modifierade Bessel-funktionen Kn(x)
+BESSELY			= BESSELY			##	Returnerar Bessel-funktionen Yn(x)
+BIN2DEC			= BIN.TILL.DEC			##	Omvandlar ett bin"art tal till decimalt
+BIN2HEX			= BIN.TILL.HEX			##	Omvandlar ett bin"art tal till hexadecimalt
+BIN2OCT			= BIN.TILL.OKT			##	Omvandlar ett bin"art tal till oktalt
+COMPLEX			= KOMPLEX			##	Omvandlar reella och imagin"ara koefficienter till ett komplext tal
+CONVERT			= KONVERTERA			##	Omvandlar ett tal fran ett mattsystem till ett annat
+DEC2BIN			= DEC.TILL.BIN			##	Omvandlar ett decimalt tal till bin"art
+DEC2HEX			= DEC.TILL.HEX			##	Omvandlar ett decimalt tal till hexadecimalt
+DEC2OCT			= DEC.TILL.OKT			##	Omvandlar ett decimalt tal till oktalt
+DELTA			= DELTA				##	Testar om tva v"arden "ar lika
+ERF			= FELF				##	Returnerar felfunktionen
+ERFC			= FELFK				##	Returnerar den komplement"ara felfunktionen
+GESTEP			= SLSTEG			##	Testar om ett tal "ar st"orre "an ett tr"oskelv"arde
+HEX2BIN			= HEX.TILL.BIN			##	Omvandlar ett hexadecimalt tal till bin"art
+HEX2DEC			= HEX.TILL.DEC			##	Omvandlar ett hexadecimalt tal till decimalt
+HEX2OCT			= HEX.TILL.OKT			##	Omvandlar ett hexadecimalt tal till oktalt
+IMABS			= IMABS				##	Returnerar absolutv"ardet (modulus) f"or ett komplext tal
+IMAGINARY		= IMAGIN"AR			##	Returnerar den imagin"ara koefficienten f"or ett komplext tal
+IMARGUMENT		= IMARGUMENT			##	Returnerar det komplexa talets argument, en vinkel uttryckt i radianer
+IMCONJUGATE		= IMKONJUGAT			##	Returnerar det komplexa talets konjugat
+IMCOS			= IMCOS				##	Returnerar cosinus f"or ett komplext tal
+IMDIV			= IMDIV				##	Returnerar kvoten f"or tva komplexa tal
+IMEXP			= IMEUPPH"OJT			##	Returnerar exponenten f"or ett komplext tal
+IMLN			= IMLN				##	Returnerar den naturliga logaritmen f"or ett komplext tal
+IMLOG10			= IMLOG10			##	Returnerar 10-logaritmen f"or ett komplext tal
+IMLOG2			= IMLOG2			##	Returnerar 2-logaritmen f"or ett komplext tal
+IMPOWER			= IMUPPH"OJT			##	Returnerar ett komplext tal upph"ojt till en exponent
+IMPRODUCT		= IMPRODUKT			##	Returnerar produkten av komplexa tal
+IMREAL			= IMREAL			##	Returnerar den reella koefficienten f"or ett komplext tal
+IMSIN			= IMSIN				##	Returnerar sinus f"or ett komplext tal
+IMSQRT			= IMROT				##	Returnerar kvadratroten av ett komplext tal
+IMSUB			= IMDIFF			##	Returnerar differensen mellan tva komplexa tal
+IMSUM			= IMSUM				##	Returnerar summan av komplexa tal
+OCT2BIN			= OKT.TILL.BIN			##	Omvandlar ett oktalt tal till bin"art
+OCT2DEC			= OKT.TILL.DEC			##	Omvandlar ett oktalt tal till decimalt
+OCT2HEX			= OKT.TILL.HEX			##	Omvandlar ett oktalt tal till hexadecimalt
+
+
+##
+##	Financial functions				Finansiella funktioner
+##
+ACCRINT			= UPPLR"ANTA			##	Returnerar den upplupna r"antan f"or v"ardepapper med periodisk r"anta
+ACCRINTM		= UPPLOBLR"ANTA			##	Returnerar den upplupna r"antan f"or ett v"ardepapper som ger avkastning pa f"orfallodagen
+AMORDEGRC		= AMORDEGRC			##	Returnerar avskrivningen f"or varje redovisningsperiod med hj"alp av en avskrivningskoefficient
+AMORLINC		= AMORLINC			##	Returnerar avskrivningen f"or varje redovisningsperiod
+COUPDAYBS		= KUPDAGBB			##	Returnerar antal dagar fran b"orjan av kupongperioden till likviddagen
+COUPDAYS		= KUPDAGARS			##	Returnerar antalet dagar i kupongperioden som innehaller betalningsdatumet
+COUPDAYSNC		= KUPDAGNK			##	Returnerar antalet dagar fran betalningsdatumet till n"asta kupongdatum
+COUPNCD			= KUPNKD			##	Returnerar n"asta kupongdatum efter likviddagen
+COUPNUM			= KUPANT			##	Returnerar kuponger som f"orfaller till betalning mellan likviddagen och f"orfallodagen
+COUPPCD			= KUPFKD			##	Returnerar f"oregaende kupongdatum f"ore likviddagen
+CUMIPMT			= KUMR"ANTA			##	Returnerar den ackumulerade r"antan som betalats mellan tva perioder
+CUMPRINC		= KUMPRIS			##	Returnerar det ackumulerade kapitalbeloppet som betalats pa ett lan mellan tva perioder
+DB			= DB				##	Returnerar avskrivningen f"or en tillgang under en angiven tid enligt metoden f"or fast degressiv avskrivning
+DDB			= DEGAVSKR			##	Returnerar en tillgangs v"ardeminskning under en viss period med hj"alp av dubbel degressiv avskrivning eller nagon annan metod som du anger
+DISC			= DISK				##	Returnerar diskonteringsr"antan f"or ett v"ardepapper
+DOLLARDE		= DECTAL			##	Omvandlar ett pris uttryckt som ett brak till ett decimaltal
+DOLLARFR		= BRAK				##	Omvandlar ett pris i kronor uttryckt som ett decimaltal till ett brak
+DURATION		= L"OPTID			##	Returnerar den arliga l"optiden f"or en s"akerhet med periodiska r"antebetalningar
+EFFECT			= EFFR"ANTA			##	Returnerar den arliga effektiva r"antesatsen
+FV			= SLUTV"ARDE			##	Returnerar det framtida v"ardet pa en investering
+FVSCHEDULE		= F"ORR"ANTNING			##	Returnerar det framtida v"ardet av ett begynnelsekapital ber"aknat pa olika r"antenivaer
+INTRATE			= ARSR"ANTA			##	Returnerar r"antesatsen f"or ett betalt v"ardepapper
+IPMT			= RBETALNING			##	Returnerar r"antedelen av en betalning f"or en given period
+IRR			= IR				##	Returnerar internr"antan f"or en serie betalningar
+ISPMT			= RALAN				##	Ber"aknar r"antan som har betalats under en specifik betalningsperiod
+MDURATION		= ML"OPTID			##	Returnerar den modifierade Macauley-l"optiden f"or ett v"ardepapper med det antagna nominella v"ardet 100 kr
+MIRR			= MODIR				##	Returnerar internr"antan d"ar positiva och negativa betalningar finansieras med olika r"antor
+NOMINAL			= NOMR"ANTA			##	Returnerar den arliga nominella r"antesatsen
+NPER			= PERIODER			##	Returnerar antalet perioder f"or en investering
+NPV			= NETNUV"ARDE			##	Returnerar nuv"ardet av en serie periodiska betalningar vid en given diskonteringsr"anta
+ODDFPRICE		= UDDAFPRIS			##	Returnerar priset per 100 kr nominellt v"arde f"or ett v"ardepapper med en udda f"orsta period
+ODDFYIELD		= UDDAFAVKASTNING		##	Returnerar avkastningen f"or en s"akerhet med en udda f"orsta period
+ODDLPRICE		= UDDASPRIS			##	Returnerar priset per 100 kr nominellt v"arde f"or ett v"ardepapper med en udda sista period
+ODDLYIELD		= UDDASAVKASTNING		##	Returnerar avkastningen f"or en s"akerhet med en udda sista period
+PMT			= BETALNING			##	Returnerar den periodiska betalningen f"or en annuitet
+PPMT			= AMORT				##	Returnerar amorteringsdelen av en annuitetsbetalning f"or en given period
+PRICE			= PRIS				##	Returnerar priset per 100 kr nominellt v"arde f"or ett v"ardepapper som ger periodisk r"anta
+PRICEDISC		= PRISDISK			##	Returnerar priset per 100 kr nominellt v"arde f"or ett diskonterat v"ardepapper
+PRICEMAT		= PRISF"ORF			##	Returnerar priset per 100 kr nominellt v"arde f"or ett v"ardepapper som ger r"anta pa f"orfallodagen
+PV			= PV				##	Returnerar nuv"ardet av en serie lika stora periodiska betalningar
+RATE			= R"ANTA				##	Returnerar r"antesatsen per period i en annuitet
+RECEIVED		= BELOPP			##	Returnerar beloppet som utdelas pa f"orfallodagen f"or ett betalat v"ardepapper
+SLN			= LINAVSKR			##	Returnerar den linj"ara avskrivningen f"or en tillgang under en period
+SYD			= ARSAVSKR			##	Returnerar den arliga avskrivningssumman f"or en tillgang under en angiven period
+TBILLEQ			= SSVXEKV			##	Returnerar avkastningen motsvarande en obligation f"or en statsskuldv"axel
+TBILLPRICE		= SSVXPRIS			##	Returnerar priset per 100 kr nominellt v"arde f"or en statsskuldv"axel
+TBILLYIELD		= SSVXR"ANTA			##	Returnerar avkastningen f"or en statsskuldv"axel
+VDB			= VDEGRAVSKR			##	Returnerar avskrivningen f"or en tillgang under en angiven period (med degressiv avskrivning)
+XIRR			= XIRR				##	Returnerar internr"antan f"or en serie betalningar som inte n"odv"andigtvis "ar periodiska
+XNPV			= XNUV"ARDE			##	Returnerar det nuvarande nettov"ardet f"or en serie betalningar som inte n"odv"andigtvis "ar periodiska
+YIELD			= NOMAVK			##	Returnerar avkastningen f"or ett v"ardepapper som ger periodisk r"anta
+YIELDDISC		= NOMAVKDISK			##	Returnerar den arliga avkastningen f"or diskonterade v"ardepapper, exempelvis en statsskuldv"axel
+YIELDMAT		= NOMAVKF"ORF			##	Returnerar den arliga avkastningen f"or ett v"ardepapper som ger r"anta pa f"orfallodagen
+
+
+##
+##	Information functions				Informationsfunktioner
+##
+CELL			= CELL				##	Returnerar information om formatering, plats och innehall i en cell
+ERROR.TYPE		= FEL.TYP			##	Returnerar ett tal som motsvarar ett felv"arde
+INFO			= INFO				##	Returnerar information om operativsystemet
+ISBLANK			= "ARREF				##	Returnerar SANT om v"ardet "ar tomt
+ISERR			= "A				##	Returnerar SANT om v"ardet "ar ett felv"arde annat "an #SAKNAS!
+ISERROR			= "ARFEL				##	Returnerar SANT om v"ardet "ar ett felv"arde
+ISEVEN			= "ARJ"AMN			##	Returnerar SANT om talet "ar j"amnt
+ISLOGICAL		= "AREJTEXT			##	Returnerar SANT om v"ardet "ar ett logiskt v"arde
+ISNA			= "ARLOGISK			##	Returnerar SANT om v"ardet "ar felv"ardet #SAKNAS!
+ISNONTEXT		= "ARSAKNAD			##	Returnerar SANT om v"ardet inte "ar text
+ISNUMBER		= "ARTAL				##	Returnerar SANT om v"ardet "ar ett tal
+ISODD			= "ARUDDA			##	Returnerar SANT om talet "ar udda
+ISREF			= "ARTOM				##	Returnerar SANT om v"ardet "ar en referens
+ISTEXT			= "ARTEXT			##	Returnerar SANT om v"ardet "ar text
+N			= N				##	Returnerar ett v"arde omvandlat till ett tal
+NA			= SAKNAS			##	Returnerar felv"ardet #SAKNAS!
+TYPE			= V"ARDETYP			##	Returnerar ett tal som anger v"ardets datatyp
+
+
+##
+##	Logical functions				Logiska funktioner
+##
+AND			= OCH				##	Returnerar SANT om alla argument "ar sanna
+FALSE			= FALSKT			##	Returnerar det logiska v"ardet FALSKT
+IF			= OM				##	Anger vilket logiskt test som ska utf"oras
+IFERROR			= OMFEL				##	Returnerar ett v"arde som du anger om en formel utv"arderar till ett fel; annars returneras resultatet av formeln
+NOT			= ICKE				##	Inverterar logiken f"or argumenten
+OR			= ELLER				##	Returnerar SANT om nagot argument "ar SANT
+TRUE			= SANT				##	Returnerar det logiska v"ardet SANT
+
+
+##
+##	Lookup and reference functions			S"ok- och referensfunktioner
+##
+ADDRESS			= ADRESS			##	Returnerar en referens som text till en enstaka cell i ett kalkylblad
+AREAS			= OMRADEN			##	Returnerar antalet omraden i en referens
+CHOOSE			= V"ALJ				##	V"aljer ett v"arde i en lista "over v"arden
+COLUMN			= KOLUMN			##	Returnerar kolumnnumret f"or en referens
+COLUMNS			= KOLUMNER			##	Returnerar antalet kolumner i en referens
+HLOOKUP			= LETAKOLUMN			##	S"oker i den "oversta raden i en matris och returnerar v"ardet f"or angiven cell
+HYPERLINK		= HYPERL"ANK			##	Skapar en genv"ag eller ett hopp till ett dokument i n"atverket, i ett intran"at eller pa Internet
+INDEX			= INDEX				##	Anv"ander ett index f"or ett v"alja ett v"arde i en referens eller matris
+INDIRECT		= INDIREKT			##	Returnerar en referens som anges av ett textv"arde
+LOOKUP			= LETAUPP			##	Letar upp v"arden i en vektor eller matris
+MATCH			= PASSA				##	Letar upp v"arden i en referens eller matris
+OFFSET			= F"ORSKJUTNING			##	Returnerar en referens f"orskjuten i f"orhallande till en given referens
+ROW			= RAD				##	Returnerar radnumret f"or en referens
+ROWS			= RADER				##	Returnerar antalet rader i en referens
+RTD			= RTD				##	H"amtar realtidsdata fran ett program som st"oder COM-automation (Automation: Ett s"att att arbeta med ett programs objekt fran ett annat program eller utvecklingsverktyg. Detta kallades tidigare f"or OLE Automation, och "ar en branschstandard och ingar i Component Object Model (COM).)
+TRANSPOSE		= TRANSPONERA			##	Transponerar en matris
+VLOOKUP			= LETARAD			##	Letar i den f"orsta kolumnen i en matris och flyttar "over raden f"or att returnera v"ardet f"or en cell
+
+
+##
+##	Math and trigonometry functions			Matematiska och trigonometriska funktioner
+##
+ABS			= ABS				##	Returnerar absolutv"ardet av ett tal
+ACOS			= ARCCOS			##	Returnerar arcus cosinus f"or ett tal
+ACOSH			= ARCCOSH			##	Returnerar inverterad hyperbolisk cosinus f"or ett tal
+ASIN			= ARCSIN			##	Returnerar arcus cosinus f"or ett tal
+ASINH			= ARCSINH			##	Returnerar hyperbolisk arcus sinus f"or ett tal
+ATAN			= ARCTAN			##	Returnerar arcus tangens f"or ett tal
+ATAN2			= ARCTAN2			##	Returnerar arcus tangens f"or en x- och en y- koordinat
+ATANH			= ARCTANH			##	Returnerar hyperbolisk arcus tangens f"or ett tal
+CEILING			= RUNDA.UPP			##	Avrundar ett tal till n"armaste heltal eller n"armaste signifikanta multipel
+COMBIN			= KOMBIN			##	Returnerar antalet kombinationer f"or ett givet antal objekt
+COS			= COS				##	Returnerar cosinus f"or ett tal
+COSH			= COSH				##	Returnerar hyperboliskt cosinus f"or ett tal
+DEGREES			= GRADER			##	Omvandlar radianer till grader
+EVEN			= J"AMN				##	Avrundar ett tal uppat till n"armaste heltal
+EXP			= EXP				##	Returnerar e upph"ojt till ett givet tal
+FACT			= FAKULTET			##	Returnerar fakulteten f"or ett tal
+FACTDOUBLE		= DUBBELFAKULTET		##	Returnerar dubbelfakulteten f"or ett tal
+FLOOR			= RUNDA.NED			##	Avrundar ett tal nedat mot noll
+GCD			= SGD				##	Returnerar den st"orsta gemensamma n"amnaren
+INT			= HELTAL			##	Avrundar ett tal nedat till n"armaste heltal
+LCM			= MGM				##	Returnerar den minsta gemensamma multipeln
+LN			= LN				##	Returnerar den naturliga logaritmen f"or ett tal
+LOG			= LOG				##	Returnerar logaritmen f"or ett tal f"or en given bas
+LOG10			= LOG10				##	Returnerar 10-logaritmen f"or ett tal
+MDETERM			= MDETERM			##	Returnerar matrisen som "ar avg"orandet av en matris
+MINVERSE		= MINVERT			##	Returnerar matrisinversen av en matris
+MMULT			= MMULT				##	Returnerar matrisprodukten av tva matriser
+MOD			= REST				##	Returnerar resten vid en division
+MROUND			= MAVRUNDA			##	Returnerar ett tal avrundat till en given multipel
+MULTINOMIAL		= MULTINOMIAL			##	Returnerar multinomialen f"or en upps"attning tal
+ODD			= UDDA				##	Avrundar ett tal uppat till n"armaste udda heltal
+PI			= PI				##	Returnerar v"ardet pi
+POWER			= UPPH"OJT.TILL			##	Returnerar resultatet av ett tal upph"ojt till en exponent
+PRODUCT			= PRODUKT			##	Multiplicerar argumenten
+QUOTIENT		= KVOT				##	Returnerar heltalsdelen av en division
+RADIANS			= RADIANER			##	Omvandlar grader till radianer
+RAND			= SLUMP				##	Returnerar ett slumptal mellan 0 och 1
+RANDBETWEEN		= SLUMP.MELLAN			##	Returnerar ett slumptal mellan de tal som du anger
+ROMAN			= ROMERSK			##	Omvandlar vanliga (arabiska) siffror till romerska som text
+ROUND			= AVRUNDA			##	Avrundar ett tal till ett angivet antal siffror
+ROUNDDOWN		= AVRUNDA.NEDAT			##	Avrundar ett tal nedat mot noll
+ROUNDUP			= AVRUNDA.UPPAT			##	Avrundar ett tal uppat, fran noll
+SERIESSUM		= SERIESUMMA			##	Returnerar summan av en potensserie baserat pa formeln
+SIGN			= TECKEN			##	Returnerar tecknet f"or ett tal
+SIN			= SIN				##	Returnerar sinus f"or en given vinkel
+SINH			= SINH				##	Returnerar hyperbolisk sinus f"or ett tal
+SQRT			= ROT				##	Returnerar den positiva kvadratroten
+SQRTPI			= ROTPI				##	Returnerar kvadratroten f"or (tal * pi)
+SUBTOTAL		= DELSUMMA			##	Returnerar en delsumma i en lista eller databas
+SUM			= SUMMA				##	Summerar argumenten
+SUMIF			= SUMMA.OM			##	Summerar celler enligt ett angivet villkor
+SUMIFS			= SUMMA.OMF			##	L"agger till cellerna i ett omrade som uppfyller flera kriterier
+SUMPRODUCT		= PRODUKTSUMMA			##	Returnerar summan av produkterna i motsvarande matriskomponenter
+SUMSQ			= KVADRATSUMMA			##	Returnerar summan av argumentens kvadrater
+SUMX2MY2		= SUMMAX2MY2			##	Returnerar summan av differensen mellan kvadraterna f"or motsvarande v"arden i tva matriser
+SUMX2PY2		= SUMMAX2PY2			##	Returnerar summan av summan av kvadraterna av motsvarande v"arden i tva matriser
+SUMXMY2			= SUMMAXMY2			##	Returnerar summan av kvadraten av skillnaden mellan motsvarande v"arden i tva matriser
+TAN			= TAN				##	Returnerar tangens f"or ett tal
+TANH			= TANH				##	Returnerar hyperbolisk tangens f"or ett tal
+TRUNC			= AVKORTA			##	Avkortar ett tal till ett heltal
+
+
+##
+##	Statistical functions				Statistiska funktioner
+##
+AVEDEV			= MEDELAVV			##	Returnerar medelv"ardet f"or datapunkters absoluta avvikelse fran deras medelv"arde
+AVERAGE			= MEDEL				##	Returnerar medelv"ardet av argumenten
+AVERAGEA		= AVERAGEA			##	Returnerar medelv"ardet av argumenten, inklusive tal, text och logiska v"arden
+AVERAGEIF		= MEDELOM			##	Returnerar medelv"ardet (aritmetiskt medelv"arde) f"or alla celler i ett omrade som uppfyller ett givet kriterium
+AVERAGEIFS		= MEDELOMF			##	Returnerar medelv"ardet (det aritmetiska medelv"ardet) f"or alla celler som uppfyller flera villkor.
+BETADIST		= BETAF"ORD			##	Returnerar den kumulativa betaf"ordelningsfunktionen
+BETAINV			= BETAINV			##	Returnerar inversen till den kumulativa f"ordelningsfunktionen f"or en viss betaf"ordelning
+BINOMDIST		= BINOMF"ORD			##	Returnerar den individuella binomialf"ordelningen
+CHIDIST			= CHI2F"ORD			##	Returnerar den ensidiga sannolikheten av c2-f"ordelningen
+CHIINV			= CHI2INV			##	Returnerar inversen av chi2-f"ordelningen
+CHITEST			= CHI2TEST			##	Returnerar oberoendetesten
+CONFIDENCE		= KONFIDENS			##	Returnerar konfidensintervallet f"or en populations medelv"arde
+CORREL			= KORREL			##	Returnerar korrelationskoefficienten mellan tva datam"angder
+COUNT			= ANTAL				##	R"aknar hur manga tal som finns bland argumenten
+COUNTA			= ANTALV			##	R"aknar hur manga v"arden som finns bland argumenten
+COUNTBLANK		= ANTAL.TOMMA			##	R"aknar antalet tomma celler i ett omrade
+COUNTIF			= ANTAL.OM			##	R"aknar antalet celler i ett omrade som uppfyller angivna villkor.
+COUNTIFS		= ANTAL.OMF			##	R"aknar antalet celler i ett omrade som uppfyller flera villkor.
+COVAR			= KOVAR				##	Returnerar kovariansen, d.v.s. medelv"ardet av produkterna f"or parade avvikelser
+CRITBINOM		= KRITBINOM			##	Returnerar det minsta v"ardet f"or vilket den kumulativa binomialf"ordelningen "ar mindre "an eller lika med ett villkorsv"arde
+DEVSQ			= KVADAVV			##	Returnerar summan av kvadrater pa avvikelser
+EXPONDIST		= EXPONF"ORD			##	Returnerar exponentialf"ordelningen
+FDIST			= FF"ORD				##	Returnerar F-sannolikhetsf"ordelningen
+FINV			= FINV				##	Returnerar inversen till F-sannolikhetsf"ordelningen
+FISHER			= FISHER			##	Returnerar Fisher-transformationen
+FISHERINV		= FISHERINV			##	Returnerar inversen till Fisher-transformationen
+FORECAST		= PREDIKTION			##	Returnerar ett v"arde l"angs en linj"ar trendlinje
+FREQUENCY		= FREKVENS			##	Returnerar en frekvensf"ordelning som en lodr"at matris
+FTEST			= FTEST				##	Returnerar resultatet av en F-test
+GAMMADIST		= GAMMAF"ORD			##	Returnerar gammaf"ordelningen
+GAMMAINV		= GAMMAINV			##	Returnerar inversen till den kumulativa gammaf"ordelningen
+GAMMALN			= GAMMALN			##	Returnerar den naturliga logaritmen f"or gammafunktionen, G(x)
+GEOMEAN			= GEOMEDEL			##	Returnerar det geometriska medelv"ardet
+GROWTH			= EXPTREND			##	Returnerar v"arden l"angs en exponentiell trend
+HARMEAN			= HARMMEDEL			##	Returnerar det harmoniska medelv"ardet
+HYPGEOMDIST		= HYPGEOMF"ORD			##	Returnerar den hypergeometriska f"ordelningen
+INTERCEPT		= SK"ARNINGSPUNKT		##	Returnerar sk"arningspunkten f"or en linj"ar regressionslinje
+KURT			= TOPPIGHET			##	Returnerar toppigheten av en m"angd data
+LARGE			= ST"ORSTA			##	Returnerar det n:te st"orsta v"ardet i en m"angd data
+LINEST			= REGR				##	Returnerar parametrar till en linj"ar trendlinje
+LOGEST			= EXPREGR			##	Returnerar parametrarna i en exponentiell trend
+LOGINV			= LOGINV			##	Returnerar inversen till den lognormala f"ordelningen
+LOGNORMDIST		= LOGNORMF"ORD			##	Returnerar den kumulativa lognormala f"ordelningen
+MAX			= MAX				##	Returnerar det st"orsta v"ardet i en lista av argument
+MAXA			= MAXA				##	Returnerar det st"orsta v"ardet i en lista av argument, inklusive tal, text och logiska v"arden
+MEDIAN			= MEDIAN			##	Returnerar medianen f"or angivna tal
+MIN			= MIN				##	Returnerar det minsta v"ardet i en lista med argument
+MINA			= MINA				##	Returnerar det minsta v"ardet i en lista "over argument, inklusive tal, text och logiska v"arden
+MODE			= TYPV"ARDE			##	Returnerar det vanligaste v"ardet i en datam"angd
+NEGBINOMDIST		= NEGBINOMF"ORD			##	Returnerar den negativa binomialf"ordelningen
+NORMDIST		= NORMF"ORD			##	Returnerar den kumulativa normalf"ordelningen
+NORMINV			= NORMINV			##	Returnerar inversen till den kumulativa normalf"ordelningen
+NORMSDIST		= NORMSF"ORD			##	Returnerar den kumulativa standardnormalf"ordelningen
+NORMSINV		= NORMSINV			##	Returnerar inversen till den kumulativa standardnormalf"ordelningen
+PEARSON			= PEARSON			##	Returnerar korrelationskoefficienten till Pearsons momentprodukt
+PERCENTILE		= PERCENTIL			##	Returnerar den n:te percentilen av v"arden i ett omrade
+PERCENTRANK		= PROCENTRANG			##	Returnerar procentrangen f"or ett v"arde i en datam"angd
+PERMUT			= PERMUT			##	Returnerar antal permutationer f"or ett givet antal objekt
+POISSON			= POISSON			##	Returnerar Poisson-f"ordelningen
+PROB			= SANNOLIKHET			##	Returnerar sannolikheten att v"arden i ett omrade ligger mellan tva gr"anser
+QUARTILE		= KVARTIL			##	Returnerar kvartilen av en m"angd data
+RANK			= RANG				##	Returnerar rangordningen f"or ett tal i en lista med tal
+RSQ			= RKV				##	Returnerar kvadraten av Pearsons produktmomentkorrelationskoefficient
+SKEW			= SNEDHET			##	Returnerar snedheten f"or en f"ordelning
+SLOPE			= LUTNING			##	Returnerar lutningen pa en linj"ar regressionslinje
+SMALL			= MINSTA			##	Returnerar det n:te minsta v"ardet i en m"angd data
+STANDARDIZE		= STANDARDISERA			##	Returnerar ett normaliserat v"arde
+STDEV			= STDAV				##	Uppskattar standardavvikelsen baserat pa ett urval
+STDEVA			= STDEVA			##	Uppskattar standardavvikelsen baserat pa ett urval, inklusive tal, text och logiska v"arden
+STDEVP			= STDAVP			##	Ber"aknar standardavvikelsen baserat pa hela populationen
+STDEVPA			= STDEVPA			##	Ber"aknar standardavvikelsen baserat pa hela populationen, inklusive tal, text och logiska v"arden
+STEYX			= STDFELYX			##	Returnerar standardfelet f"or ett f"orutspatt y-v"arde f"or varje x-v"arde i regressionen
+TDIST			= TF"ORD				##	Returnerar Students t-f"ordelning
+TINV			= TINV				##	Returnerar inversen till Students t-f"ordelning
+TREND			= TREND				##	Returnerar v"arden l"angs en linj"ar trend
+TRIMMEAN		= TRIMMEDEL			##	Returnerar medelv"ardet av mittpunkterna i en datam"angd
+TTEST			= TTEST				##	Returnerar sannolikheten ber"aknad ur Students t-test
+VAR			= VARIANS			##	Uppskattar variansen baserat pa ett urval
+VARA			= VARA				##	Uppskattar variansen baserat pa ett urval, inklusive tal, text och logiska v"arden
+VARP			= VARIANSP			##	Ber"aknar variansen baserat pa hela populationen
+VARPA			= VARPA				##	Ber"aknar variansen baserat pa hela populationen, inklusive tal, text och logiska v"arden
+WEIBULL			= WEIBULL			##	Returnerar Weibull-f"ordelningen
+ZTEST			= ZTEST				##	Returnerar det ensidiga sannolikhetsv"ardet av ett z-test
+
+
+##
+##	Text functions					Textfunktioner
+##
+ASC			= ASC				##	"Andrar helbredds (dubbel byte) engelska bokst"aver eller katakana inom en teckenstr"ang till tecken med halvt breddsteg (enkel byte)
+BAHTTEXT		= BAHTTEXT			##	Omvandlar ett tal till text med valutaformatet ss (baht)
+CHAR			= TECKENKOD			##	Returnerar tecknet som anges av kod
+CLEAN			= ST"ADA				##	Tar bort alla icke utskrivbara tecken i en text
+CODE			= KOD				##	Returnerar en numerisk kod f"or det f"orsta tecknet i en textstr"ang
+CONCATENATE		= SAMMANFOGA			##	Sammanfogar flera textdelar till en textstr"ang
+DOLLAR			= VALUTA			##	Omvandlar ett tal till text med valutaformat
+EXACT			= EXAKT				##	Kontrollerar om tva textv"arden "ar identiska
+FIND			= HITTA				##	Hittar en text i en annan (skiljer pa gemener och versaler)
+FINDB			= HITTAB			##	Hittar en text i en annan (skiljer pa gemener och versaler)
+FIXED			= FASTTAL			##	Formaterar ett tal som text med ett fast antal decimaler
+JIS			= JIS				##	"Andrar halvbredds (enkel byte) engelska bokst"aver eller katakana inom en teckenstr"ang till tecken med helt breddsteg (dubbel byte)
+LEFT			= V"ANSTER			##	Returnerar tecken l"angst till v"anster i en str"ang
+LEFTB			= V"ANSTERB			##	Returnerar tecken l"angst till v"anster i en str"ang
+LEN			= L"ANGD				##	Returnerar antalet tecken i en textstr"ang
+LENB			= L"ANGDB			##	Returnerar antalet tecken i en textstr"ang
+LOWER			= GEMENER			##	Omvandlar text till gemener
+MID			= EXTEXT			##	Returnerar angivet antal tecken fran en text med b"orjan vid den position som du anger
+MIDB			= EXTEXTB			##	Returnerar angivet antal tecken fran en text med b"orjan vid den position som du anger
+PHONETIC		= PHONETIC			##	Returnerar de fonetiska (furigana) tecknen i en textstr"ang
+PROPER			= INITIAL			##	"Andrar f"orsta bokstaven i varje ord i ett textv"arde till versal
+REPLACE			= ERS"ATT			##	Ers"atter tecken i text
+REPLACEB		= ERS"ATTB			##	Ers"atter tecken i text
+REPT			= REP				##	Upprepar en text ett best"amt antal ganger
+RIGHT			= H"OGER				##	Returnerar tecken l"angst till h"oger i en str"ang
+RIGHTB			= H"OGERB			##	Returnerar tecken l"angst till h"oger i en str"ang
+SEARCH			= S"OK				##	Hittar ett textv"arde i ett annat (skiljer inte pa gemener och versaler)
+SEARCHB			= S"OKB				##	Hittar ett textv"arde i ett annat (skiljer inte pa gemener och versaler)
+SUBSTITUTE		= BYT.UT			##	Ers"atter gammal text med ny text i en textstr"ang
+T			= T				##	Omvandlar argumenten till text
+TEXT			= TEXT				##	Formaterar ett tal och omvandlar det till text
+TRIM			= RENSA				##	Tar bort blanksteg fran text
+UPPER			= VERSALER			##	Omvandlar text till versaler
+VALUE			= TEXTNUM			##	Omvandlar ett textargument till ett tal
