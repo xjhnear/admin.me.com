@@ -15,7 +15,7 @@ $params = array_merge(
 return [
 //'timeZone' => 'Asia/Shanghai',
     'id' => 'app-backend',
-    'name' => '<strong>MISS思念体</strong>后台管理',
+    'name' => '<strong></strong>后台管理',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
@@ -53,9 +53,9 @@ return [
         ],
         'apiDb' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=rds0955fa9c50e8535qc.mysql.rds.aliyuncs.com;dbname=cinderellar',
-            'username' => 'cinderellar',
-            'password' => '8888zz980ZZ',
+            'dsn' => 'mysql:host=localhost;dbname=cinderellar',
+            'username' => 'root',
+            'password' => '',
             //release
             //'dsn' => 'mysql:host=121.40.79.48;dbname=cinderellar',
             //'username' => 'root',

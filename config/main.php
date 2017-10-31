@@ -8,7 +8,7 @@ $params = array_merge(
 
 return [
     'id' => 'app-backend',
-    'name' => '<strong>蛋头</strong>后台管理',
+    'name' => '<strong></strong>后台管理',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
@@ -48,7 +48,7 @@ return [
             'class' => 'yii\db\Connection',
             'dsn' => 'mysql:host=localhost;dbname=cinderellar',
             'username' => 'root',
-            'password' => '8c197f7093',
+            'password' => '',
             //release
             //'dsn' => 'mysql:host=121.40.79.48;dbname=cinderellar',
             //'username' => 'root',

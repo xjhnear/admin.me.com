@@ -16,8 +16,8 @@ $config = [
         'apiDb' => [
             'class' => 'yii\db\Connection',
             'dsn' => 'mysql:host=localhost;dbname=cinderellar',
-            'username' => 'llroot',
-            'password' => '8888zz980ZZ',
+            'username' => 'root',
+            'password' => '',
             //release
             //'dsn' => 'mysql:host=121.40.79.48;dbname=cinderellar',
             //'username' => 'root',
